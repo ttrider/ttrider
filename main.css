@@ -131,6 +131,23 @@ header .breadcrumbs a:visited {
   background-image: url(/vc/03.\ Vlad\ and\ the\ Accidental\ Bride.png);
 }
 
+.downloads {
+  text-align: center;
+}
+
+.reader {
+  /* margin-left: auto;
+  margin-right: auto; */
+  padding: 1em;
+  margin-top: var(--header-height);
+}
+
+.readerframe {
+  background-color:#fff;
+  width: 600px;
+  height: 100vh;
+}
+
 
 .center-panel {
   background-color: brown;
