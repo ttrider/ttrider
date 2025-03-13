@@ -37,17 +37,33 @@ header .breadcrumbs {
   color: var(--text-color-2);
   font-size: 0.8em;
   display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   gap: 0.25em;
 }
 
-a{
+header .breadcrumbs .downloads{
+  flex-grow: 1;
+  text-align: right;
+  word-wrap: none;
+  overflow: hidden;
+}
+
+header .breadcrumbs div {
+  word-wrap: none;
+  text-overflow: ellipsis;
+  text-wrap-mode: nowrap;
+  overflow: hidden;
+}
+
+header a{
   color: var(--text-color-2);
   text-decoration: none;
 }
-a:visited{
+header a:visited{
   color: var(--text-color-2);
 }
-a:hover{
+header a:hover{
   text-decoration: underline;
 }
 
@@ -135,17 +151,25 @@ header .breadcrumbs a:visited {
   text-align: center;
 }
 
+.downloads a{
+  color: var(--text-color-1);
+}
+.downloads a:visited{
+  color: var(--text-color-1);
+}
+
 .reader {
-  /* margin-left: auto;
-  margin-right: auto; */
+  position: fixed;
+  top:var(--header-height);
+  bottom:0;
+  left:0;
+  right:0;
   padding: 1em;
-  margin-top: var(--header-height);
 }
 
 .readerframe {
   background-color:#fff;
   width: 600px;
-  height: 100vh;
 }
 
 
