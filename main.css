@@ -102,6 +102,11 @@ header .breadcrumbs a:visited {
   font-style: italic;
 }
 
+.books .disclaimer a {
+  color: var(--text-color-1);
+  font-weight: bold;
+}
+
 
 .books .booklist {
   max-width: 800px;
