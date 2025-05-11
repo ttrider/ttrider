@@ -151,6 +151,9 @@ header .breadcrumbs a:visited {
 .books .booklist .book .cover-03 {
   background-image: url(/vc/03.\ Vlad\ and\ the\ Accidental\ Bride.png);
 }
+.books .booklist .book .cover-04 {
+  background-image: url(/vc/04.\ Vlad\ and\ the\ Asgoikyos\ Dilemma.png);
+}
 
 .downloads {
   text-align: center;
