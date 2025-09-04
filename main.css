@@ -154,6 +154,9 @@ header .breadcrumbs a:visited {
 .books .booklist .book .cover-04 {
   background-image: url(/vc/04.\ Vlad\ and\ the\ Asgoikyos\ Dilemma.png);
 }
+.books .booklist .book .cover-05 {
+  background-image: url(/vc/05.\ Vlad\ and\ the\ Queen.png);
+}
 
 .downloads {
   text-align: center;
@@ -172,12 +175,25 @@ header .breadcrumbs a:visited {
   display: flex;
 }
 
+.reader-fixed {
+  top:var(--header-height);
+  left:0;
+  right:0;
+  bottom:0;
+  overflow: hidden;
+  padding: 1em;
+  display: flex;
+  position: fixed;
+}
+
 .readerframe {
   background-color:#fff;
   max-width: 600px;
+  width:600px;
   margin-left:auto;
   margin-right:auto;
 }
+
 
 
 .center-panel {
