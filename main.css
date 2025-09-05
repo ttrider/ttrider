@@ -33,8 +33,6 @@ header .title {
   overflow: hidden;
 }
 
-header .series {}
-
 header .breadcrumbs {
   color: var(--text-color-2);
   font-size: 0.8em;
