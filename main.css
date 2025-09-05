@@ -15,9 +15,9 @@ body {
 
 header {
   position: fixed;
-  left:0;
-  top:0;
-  right:0;
+  left: 0;
+  top: 0;
+  right: 0;
   height: var(--header-height);
   border-bottom: 1px solid var(--text-color);
   background: var(--back-color);
@@ -33,6 +33,8 @@ header .title {
   overflow: hidden;
 }
 
+header .series {}
+
 header .breadcrumbs {
   color: var(--text-color-2);
   font-size: 0.8em;
@@ -42,7 +44,7 @@ header .breadcrumbs {
   gap: 0.25em;
 }
 
-header .breadcrumbs .downloads{
+header .breadcrumbs .downloads {
   flex-grow: 1;
   text-align: right;
   word-wrap: none;
@@ -56,14 +58,16 @@ header .breadcrumbs div {
   overflow: hidden;
 }
 
-header a{
+header a {
   color: var(--text-color-2);
   text-decoration: none;
 }
-header a:visited{
+
+header a:visited {
   color: var(--text-color-2);
 }
-header a:hover{
+
+header a:hover {
   text-decoration: underline;
 }
 
@@ -140,46 +144,47 @@ header .breadcrumbs a:visited {
 .books .booklist .book .cover-soon-text {
   font-size: 1.3em;
   font-style: italic;
-}
-
-.books .booklist .book .cover-01 {
-  background-image: url(/vc/01.\ Vlad\ and\ the\ Big\ G-Nubz.png);
-}
-.books .booklist .book .cover-02 {
-  background-image: url(/vc/02.\ Vlad\ and\ The\ King.png);
-}
-.books .booklist .book .cover-03 {
-  background-image: url(/vc/03.\ Vlad\ and\ the\ Accidental\ Bride.png);
-}
-.books .booklist .book .cover-04 {
-  background-image: url(/vc/04.\ Vlad\ and\ the\ Asgoikyos\ Dilemma.png);
-}
-.books .booklist .book .cover-05 {
-  background-image: url(/vc/05.\ Vlad\ and\ the\ Queen.png);
-}
-
-.downloads {
   text-align: center;
 }
 
-.downloads a{
+.books .booklist .book .coming-soon-text {
+  font-size: 1.3em;
+  font-style: italic;
+  text-align: center;
+  line-height: 3em;
+}
+
+
+.downloads {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.downloads :first-child {
+  flex-grow: 1;
+}
+
+
+.downloads a {
   color: var(--text-color-1);
 }
-.downloads a:visited{
+
+.downloads a:visited {
   color: var(--text-color-1);
 }
 
 .reader {
-  margin-top:var(--header-height);
+  margin-top: var(--header-height);
   padding: 1em;
   display: flex;
 }
 
 .reader-fixed {
-  top:var(--header-height);
-  left:0;
-  right:0;
-  bottom:0;
+  top: var(--header-height);
+  left: 0;
+  right: 0;
+  bottom: 0;
   overflow: hidden;
   padding: 1em;
   display: flex;
@@ -187,11 +192,12 @@ header .breadcrumbs a:visited {
 }
 
 .readerframe {
-  background-color:#fff;
+  background-color: #fff;
   max-width: 600px;
-  width:600px;
-  margin-left:auto;
-  margin-right:auto;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  /* display: none; */
 }
 
 
@@ -216,8 +222,5 @@ header .breadcrumbs a:visited {
 .center-panel :last-child {
   background-color: beige;
   width: 1em;
-  
+
 }
-
-
-
