@@ -20,9 +20,9 @@ const vcBooks = {
         {
             title: 'Vlad and the Asgoikyos Dilemma',
         },
-        {
-            title: 'Vlad and the Queen',
-        }
+        // {
+        //     title: 'Vlad and the Queen',
+        // }
     ],
     getBooks: function () {
 
