@@ -105,7 +105,6 @@ header .breadcrumbs a:visited {
 }
 
 .books .disclaimer {
-  /* padding-top: var(--header-height); */
   max-width: 800px;
   font-style: italic;
 }
@@ -123,7 +122,6 @@ header .breadcrumbs a:visited {
   justify-content: space-around;
   gap: 5em;
   padding-bottom: 5em;
-  /* padding-top: var(--header-height); */
 }
 
 .books .booklist .book {
