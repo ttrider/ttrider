@@ -27,6 +27,17 @@ header {
   box-shadow: var(--back-color) 0 1em 1em;
 }
 
+header .favicon {
+  width: 2.5em;
+  height: 2.5em;
+  background-image: url('/icons/favicon-32x32.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  float: left;
+  margin-right: 0.5em;
+}
+
 header .title {
   font-size: 1.5em;
   word-wrap: none;
