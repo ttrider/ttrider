@@ -1,4 +1,5 @@
 :root {
+  --text-color-1: rgb(220, 220, 220);
   --text-color: rgb(220, 220, 220);
   --text-color-2: rgb(170, 170, 170);
   --back-color: rgb(14, 14, 14);
@@ -30,7 +31,7 @@ header {
 header .favicon {
   width: 2.5em;
   height: 2.5em;
-  background-image: url('/icons/favicon-32x32.png');
+  background-image: url("/icons/favicon-32x32.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -84,7 +85,6 @@ header a:hover {
   text-decoration: underline;
 }
 
-
 header .breadcrumbs a:visited {
   color: var(--text-color-2);
 }
@@ -125,7 +125,6 @@ header .breadcrumbs a:visited {
   font-weight: bold;
 }
 
-
 .books .booklist {
   max-width: 800px;
   display: flex;
@@ -165,7 +164,6 @@ header .breadcrumbs a:visited {
   line-height: 3em;
 }
 
-
 .books .booklist .book .downloads {
   display: flex;
   justify-content: space-between;
@@ -184,6 +182,20 @@ header .breadcrumbs a:visited {
 }
 
 .books .booklist .book .downloads a:visited {
+  color: var(--text-color-1);
+}
+
+.books .booklist .book .title {
+  color: var(--text-color-1);
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.books .booklist .book .title a {
+  color: var(--text-color-1);
+}
+
+.books .booklist .book .title a:visited {
   color: var(--text-color-1);
 }
 
