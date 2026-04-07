@@ -4,6 +4,7 @@
   --text-color-2: rgb(170, 170, 170);
   --back-color: rgb(14, 14, 14);
   --back-color-2: rgb(47, 47, 47);
+  --text-color-release: #f1d59d;
   --header-height: 3.7em;
   --top-padding: 5em;
 }
@@ -214,4 +215,52 @@ header .breadcrumbs a:visited {
 .readerframe {
   width: 100%;
   border: none;
+}
+
+.release {
+  color: var(--text-color-release);
+  margin: 2em;
+  max-width: 800px;
+}
+
+.release a {
+  color: var(--text-color-release);
+}
+.release a:visited {
+  color: var(--text-color-release);
+}
+
+.release .release-name {
+  font-size: 1.6em;
+}
+.release .release-block {
+  display: flex;
+  gap: 1em;
+}
+.release .release-block .release-offers {
+  display: flex;
+  flex-direction: column;
+  width: 10em;
+  max-width: 10em;
+  min-width: 10em;
+  gap: 2em;
+}
+.release .release-block .release-offers .release-offer {
+  background-position: center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  align-content: end;
+}
+
+.release .release-block .release-offers .release-offer-audible {
+  height: 11.5em;
+}
+.release .release-block .release-offers .release-offer-kindle {
+  height: 16.5em;
+}
+.release .release-block .release-details {
+  flex-grow: 1;
+  font-size: 1.1em;
 }
